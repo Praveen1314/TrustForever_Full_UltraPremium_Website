@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us | Suraksha Safety Nets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="Suraksha Safety Nets – Who we are, what we do, our journey and why thousands trust us in Bengaluru." />
+
+  <!-- Bootstrap & AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        rel="stylesheet"/>
+        <!-- head of about.html -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  rel="stylesheet"
+/>
+
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: #333;
+      background: #f8f9fa;
+      line-height: 1.6;
+    }
+    /* NAVBAR */
+    .navbar-brand img { height: 50px; }
+
+    /* HERO */
+    .hero {
+      background: url('images/Suraksha-logo.jpeg') center/cover no-repeat;
+      height: 280px;
+      position: relative;
+      margin-bottom: 2rem;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+    .hero .container {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .hero h1 { font-size: 2.5rem; font-weight: 700; }
+
+    /* SECTION TITLES */
+    .section-title {
+      font-size: 2rem;
+      color: #007acc;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    /* WHO WE ARE */
+    .about-text {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* SERVICES */
+    .services-list li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .services-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #007acc;
+      font-weight: bold;
+    }
+
+    /* MILESTONES */
+    .counter {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #007acc;
+    }
+
+    /* TIMELINE */
+    /* Auto-scrolling timeline wrapper */
+.timeline-scroll {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 40px 20px;
+  scroll-snap-type: x mandatory;
+  background: linear-gradient(135deg, #e3f2fd, #ffffff);
+  border-radius: 16px;
+  animation: autoScroll 30s linear infinite;
+  will-change: transform;
+}
+
+/* Keyframes for smooth auto-scroll */
+@keyframes autoScroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Card styling */
+.timeline-year-block {
+  position: relative;
+  flex: 0 0 auto;
+  min-width: 240px;
+  background: linear-gradient(135deg, #ffffff 0%, #d0eaff 100%);
+  clip-path: polygon(
+    0% 10%, 100% 0%, 100% 90%,
+    90% 100%, 10% 100%, 0% 90%
+  );
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  scroll-snap-align: start;
+  text-align: center;
+  transition: transform 0.3s ease;
+  border-top: 6px solid #007acc;
+}
+
+/* Card hover animation */
+.timeline-year-block:hover {
+  transform: scale(1.05);
+}
+
+/* Round image at top */
+.timeline-year-block img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border: 3px solid #e3f2fd;
+}
+
+/* Year and description */
+.timeline-year-block h4 {
+  font-size: 1.4rem;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-year-block p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+    /* CAROUSEL */
+    .carousel-item img {
+      width: 10%;
+      max-height: 250px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .carousel-caption {
+      background: rgba(0,0,0,0.6);
+      border-radius: 6px;
+      padding: 0.5rem;
+    }
+
+/* Testimonials Section */
+#testimonials {
+  background: #d4e4ec;
+  padding: 60px 0;
+}
+
+#testimonials .section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #007acc;
+}
+
+/* wrapper + auto-scroll track */
+.testimonials-wrapper {
+  overflow: hidden;
+}
+.testimonials-track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll-testimonials 15s linear infinite;
+}
+@keyframes scroll-testimonials {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* clip-path card */
+.testimonial-card {
+  position: relative;
+  flex: 0 0 300px;
+  background: linear-gradient(135deg, #ffffff 0%, #0b2d45 100%);
+  clip-path: polygon(
+     0% 10%, 100% 0%, 100% 90%,
+     90% 100%, 10% 100%, 0% 90%
+  );
+  padding: 2rem 1.5rem 1.5rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+.testimonial-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 6px;
+  background: #007acc;
+  clip-path: inherit;
+}
+.testimonial-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+/* content inside card */
+.testimonial-card .profile-pic {
+  width: 80px; height: 80px;
+  border: 4px solid #fff;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.testimonial-card h5 {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+.testimonial-card small {
+  color: #666;
+  display: block;
+  margin-bottom: 1rem;
+}
+.testimonial-card p {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.testimonial-card .star-rating {
+  color: #f5c518;
+  font-size: 1.1rem;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+}
+
+/* Stats Strip Banner */
+.stats-strip {
+  background: linear-gradient(135deg, #7fb6f1, #0056b3);
+  color: #fff;
+  padding: 40px 0;
+  border-radius: 80px;
+  margin: 60px auto;
+  max-width: 75%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.stats-strip .row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.stats-strip .col-md-3 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.stats-strip img {
+  width: 65px;
+  height: 65px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.stats-strip h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.stats-strip p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+}
+
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.star-rating {
+  color: #f5c518; /* gold */
+  font-size: 1.1rem;
+}
+
+/* Section title tweak */
+#testimonials .section-title {
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.service-card::before {
+  content: "";
+  display: block;
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, #ff6600, #ffc107);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+.service-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transform: scale(1);
+}
+
+.service-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.service-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 15px;
+}
+.service-card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* — Services Grid — */
+.services-section .services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.services-section .service-card {
+  flex: 1 1 240px;
+  max-width: none;
+  background: #ebe8e8;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-section .service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+}
+
+.services-section .card-image-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.services-section .card-image-wrapper .main-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-image-wrapper {
+  position: relative;
+}
+
+.call-overlay {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;  /* adjust size */
+  height: 48px;
+}
+
+
+.services-section .card-image-wrapper .call-overlay {
+  position: absolute;
+  bottom: 12px;
+  right: 1px;
+  width: 36px;
+  height: 36px;
+}
+
+
+/* Text area inside card */
+.services-section .service-card h3 {
+  font-size: 1.15rem;
+  margin: 1rem;
+  color: #007acc;
+}
+
+.services-section .service-card .short-text,
+.services-section .service-card .full-text {
+  margin: 0 1rem 1rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+.services-section .service-card  {
+  margin: auto 1rem 1rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  /* background: #007acc; */
+  border-radius: 120px;
+  text-decoration: none;
+  text-align: center;
+}
+.services-section {
+  background-color: #c9e3f6;  /* pick any hex/RGB/variable you like */
+}
+
+.read-more-btn {
+  background-color: #ab6344;
+  color: #fff;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 60;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.read-more-btn:hover {
+  background-color: #e65c00;
+}
+
+/* Make sure at narrow widths they stack */
+@media (max-width: 992px) {
+  .services-section .service-card {
+    flex: 1 1 calc(50% - 1.5rem);
+    max-width: calc(50% - 1.5rem);
+  }
+}
+@media (max-width: 576px) {
+  .services-section .service-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+/* — Who We Are Section — */
+.who-we-are-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #e1f5fe, #ffffff);
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  flex-wrap: wrap;
+}
+
+.who-we-are-text {
+  flex: 1 1 404px;
+  text-align: center;
+}
+
+.who-we-are-text h2 {
+  font-size: 2.5rem;
+  color: #007acc;
+  margin-bottom: 1rem;
+}
+
+.who-we-are-text p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.who-we-are-image {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.who-we-are-image img {
+  width: 420px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Our Journey Section */
+/* Auto-scrolling Timeline */
+/* Hexagon Timeline Wrapper */
+.hex-timeline-wrapper {
+  overflow: hidden;
+  background: linear-gradient(135deg, #e3f2fd, #1b1302);
+  border-radius: 16px;
+  padding: 40px 20px;
+}
+
+.hex-timeline-track {
+  display: flex;
+  gap: 2rem;
+  animation: scrollHex 30s linear infinite;
+}
+
+@keyframes scrollHex {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Hexagon Card */
+.hex-card {
+  flex: 0 0 240px;
+background: linear-gradient(135deg, #f2eded 0%, #216798 100%);  clip-path: polygon(
+    50% 0%, 100% 25%, 100% 75%,
+    50% 100%, 0% 75%, 0% 25%
+  );
+  padding: 2rem 1.5rem;
+  box-shadow: 0 6px 16px rgba(1, 1, 1, 0.08);
+  scroll-snap-align: start;
+  text-align: center;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.hex-card:hover {
+  transform: scale(1.05);
+}
+
+.hex-card h4 {
+  font-size: 1.4rem;
+  color: #007acc;
+  margin-bottom: 0.5rem;
+}
+
+.hex-card p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
+    
+/* FLOATING CTAs */
+    .whatsapp-float,
+    .call-button {
+      position: fixed;
+      bottom: 20px;
+      z-index: 999;
+      animation: pulse 2s infinite;
+    }
+    .whatsapp-float { right: 20px; }
+    .call-button   { right: 90px; }
+    .whatsapp-float img,
+    .call-button img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    @keyframes pulse {
+      0%,100% { transform: scale(1); }
+      50%     { transform: scale(1.1); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/Suraksha-logo.jpeg" alt="Suraksha Logo">
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse"
+           id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+
+          <!-- Bootstrap dropdown for alignment -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle"
+               href="#" role="button"
+               data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="invisible-grill.html">Invisible Grills</a></li>
+      <!-- <li><a href="bird-spikes.html">Bird Spikes</a></li> -->
+      <li><a href="anti-bird-nets.html">Anti Bird Nets</a></li>
+      <li><a href="balcony-safety-nets.html">Balcony Nets</a></li>
+      <li><a href="child-safety-nets.html">Child Safety Nets</a></li>
+      <li><a href="pigeon-safety-nets.html">Pigeon Safety Nets</a></li>
+      <li><a href="sliding-door-mosquito-net.html">Sliding Door Mosquito Nets</a></li>
+      <li><a href="cricket-box-net.html">Cricket Box Nets</a></li>
+      <li><a href="duct-area-net.html">Duct Area Nets</a></li>
+      <li><a href="cloth-hangers.html">Cloth hangers</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO + BREADCRUMB -->
+  <section class="hero">
+    <div class="container" data-aos="fade-up">
+      <h1>About Us</h1>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center bg-transparent p-0">
+          
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section class="who-we-are-section" data-aos="fade-up">
+  <div class="who-we-are-text">
+    <h2>Who We Are</h2>
+    <p>
+      A safety net protects people and property by arresting falls or stopping flying objects.
+      Since 2020, Suraksha Safety Nets has blended cutting-edge materials with zero-damage
+      installations, delivering over <strong>3,000 successful projects</strong> across Bengaluru—
+      balcony nets, child-safe barriers, duct covers and humane bird spikes.
+    </p>
+  </div>
+  <div class="who-we-are-image">
+    <img src="images/About-us-image.webp" alt="Suraksha Team or Service Image">
+  </div>
+</section>
+
+  <!-- What We Offer Section -->
+<!-- What We Offer -->
+<section class="services-section py-5" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">What We Offer For Our Customers</h2>
+    <div class="services-grid">
+
+      <!-- Service 1 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-image-wrapper">
+          <img src="images/invisible-grill.jpg"
+               alt="Invisible Grill for Balconies"
+               class="main-image" />
+          <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg"
+                 alt="Call Now"
+                 class="call-overlay" />
+          </a>
+        </div>
+        <h3>Invisible Grill for Balconies</h3>
+        <p class="short-text">Modern safety solution with clear views.</p>
+        <a href="invisible-grill.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-image-wrapper">
+          <img src="images/balcony-safety-nets.jpg"
+               alt="Balcony Safety Nets"
+               class="main-image" />
+          <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg"
+                 alt="Call Now"
+                 class="call-overlay" />
+          </a>
+        </div>
+        <h3>Balcony Safety Nets</h3>
+        <p class="short-text">Protect children and pets from accidental falls.</p>
+        <a href="balcony-safety-nets.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-image-wrapper">
+          <img src="images/pigeon-balcony-nets.jpg" alt="Anti Bird Nets for Balcony" class="main-image">
+          <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg" alt="Call Now" class="call-overlay">
+          </a>
+        </div>
+        <h3>Anti Bird Nets for Balcony</h3>
+        <p class="short-text">Keep pigeons and birds away while preserving views.</p>
+        <p class="full-text" style="display: none;">Invisible bird nets prevent droppings, nests, and noise. Designed for durability and cleanliness — keeps your balcony hygienic and peaceful.</p>
+        <a href="anti-bird-nets.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+        <div class="card-image-wrapper">
+          <img src="images/Anti-bird-net.jpeg" alt="Pigeon Safety Nets" class="main-image">
+          <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg" alt="Call Now" class="call-overlay">
+          </a>
+        </div>
+        <h3>Pigeon Safety Nets</h3>
+        <p class="short-text">Discreet and long-lasting pigeon prevention.</p>
+        <p class="full-text" style="display: none;">Blocks access to air ducts, ledges, and roof spaces. Flame-retardant and weatherproof with zero harm to birds.</p>
+        <a href="pigeon-safety-nets.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-image-wrapper">
+          <img src="images/child-safety-net.jpg" alt="Child Safety Nets" class="main-image">
+          <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg" alt="Call Now" class="call-overlay">
+          </a>
+        </div>
+        <h3>Child Safety Nets</h3>
+        <p class="short-text">Secure balconies and staircases for kids.</p>
+        <p class="full-text" style="display: none;">Soft yet strong nets guard open railings and windows. Built for bounce protection and tested against tears and tangles.</p>
+        <a href="child-safety-nets.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="card-image-wrapper">
+          <img src="images/mosquito-net.jpg" alt="Mosquito Nets" class="main-image">
+         <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg" alt="Call Now" class="call-overlay">
+          </a>
+        </div>
+        <h3>Sliding Door Mosquito Nets</h3>
+        <p class="short-text">Block insects while welcoming fresh air.</p>
+        <p class="full-text" style="display: none;">Framed mesh doors with invisible fabric — safeguard your interiors while keeping things bright, breezy, and bug-free.</p>
+       <a href="sliding-door-mosquito-net.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 7 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-image-wrapper">
+          <img src="images/cloth-hanger.jpg" alt="Cloth Hangers" class="main-image">
+          <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg" alt="Call Now" class="call-overlay">
+          </a>
+        </div>
+        <h3>Cloth Hangers</h3>
+        <p class="short-text">Ceiling-mounted hangers for compact drying.</p>
+        <p class="full-text" style="display: none;">Space-saving pulley systems made from steel rods — great for balconies, bathrooms, and utility zones.</p>
+        <a href="cloth-hangers.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 8 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="450">
+        <div class="card-image-wrapper">
+          <img src="images/cricket-box-net.jpg" alt="Cricket Box Net" class="main-image">
+         <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg" alt="Call Now" class="call-overlay">
+          </a>
+        </div>
+        <h3>Cricket Box Net</h3>
+        <p class="short-text">Practice cricket safely with our nets.</p>
+        <p class="full-text" style="display: none;">High-tensile cricket nets absorb impact and prevent injury. Perfect for schools and sports centers.</p>
+        <a href="cricket-box-net.html" class="read-more-btn">Read More</a>
+      </div>
+
+      <!-- Service 9 -->
+      <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-image-wrapper">
+          <img src="images/duct-area-nets.jpg" alt="Duct Area Nets" class="main-image">
+         <a href="tel:+918985942456">
+            <img src="images/call-now-image.jpg" alt="Call Now" class="call-overlay">
+          </a>
+        </div>
+        <h3>Duct Area Nets</h3>
+        <p class="short-text">Prevent debris from entering duct shafts.</p>
+        <p class="full-text" style="display: none;">Tailored netting solutions for vents and ducts. Stops birds, trash, and insects while maintaining airflow.</p>
+        <a href="duct-area-net.html" class="read-more-btn">Read More</a>
+      </div>
+
+      
+    </div>
+  </div>
+</section>
+
+  <!-- MILESTONES -->
+  <section data-aos="fade-up">
+  <div class="stats-strip">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="images/projects-icon.jpg" alt="Projects" width="40">
+          <h3><span class="counter" data-target="5200">5200</span>+</h3>
+          <p>Projects Done</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/happy-client.jpg" alt="Clients" width="40">
+          <h3><span class="counter" data-target="5100">5100</span>+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/expert-staff-image.jpg" alt="Staff" width="40">
+          <h3><span class="counter" data-target="50">50</span>+</h3>
+          <p>Expert Staff</p>
+        </div>
+        <div class="col-md-3">
+          <img src="images/years-experience.jpg" alt="Experience" width="40">
+          <h3><span class="counter" data-target="25">25</span>+</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- OUR JOURNEY -->
+  <section class="container my-5" data-aos="fade-up">
+  <h2 class="section-title text-center mb-4">Our Journey</h2>
+  <div class="hex-timeline-wrapper">
+    <div class="hex-timeline-track">
+
+      <!-- Year 2020 -->
+      <div class="hex-card">
+        <h4>2020</h4>
+        <p>Suraksha founded to redefine invisible grill safety across Bengaluru.</p>
+      </div>
+
+      <!-- Year 2021 -->
+      <div class="hex-card">
+        <h4>2021</h4>
+        <p>Secured 500+ homes with balcony nets and invisible grill installs.</p>
+      </div>
+
+      <!-- Year 2022 -->
+      <div class="hex-card">
+        <h4>2022</h4>
+        <p>Launched duct nets, cricket box nets, and curved grill designs.</p>
+      </div>
+
+      <!-- Year 2023 -->
+      <div class="hex-card">
+        <h4>2023</h4>
+        <p>Crossed 2,000 installations. Introduced bird spikes & mosquito nets.</p>
+      </div>
+
+      <!-- Year 2024 -->
+      <div class="hex-card">
+        <h4>2024</h4>
+        <p>Reached 3,000+ successful projects. Recognized as a top safety brand.</p>
+      </div>
+
+      <!-- Year 2025 -->
+      <div class="hex-card">
+        <h4>2025</h4>
+        <p>Now protecting 5,200+ homes. Suraksha leads in invisible grill innovation.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testimonials-section" data-aos="fade-up">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">What Clients Say About Us</h2>
+    <div class="testimonials-wrapper">
+      <div class="testimonials-track">
+
+        <!-- Card 1 -->
+        <div class="testimonial-card text-center">
+          <img src="images/Ramesh review.jpg"
+               alt="Kishore"
+               class="profile-pic" />
+          <h5>Kishore</h5>
+          <small>Grills</small>
+          <p>“Great solution—safe windows without compromising views.”</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="testimonial-card text-center">
+          <img src="images/Ramesh review.jpg"
+               alt="Kishore"
+               class="profile-pic" />
+          <h5>Naidu</h5>
+          <small>Safety Nets</small>
+          <p>“Professional and efficient installation. Sleek design—worth every penny!”</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="testimonial-card text-center">
+          <img src="images/Rupa review.jpg"
+               alt="Kishore"
+               class="profile-pic" />
+          <h5>Prasad</h5>
+          <small>Safety Nets</small>
+          <p>“Excellent service and durability! The nets are sturdy and look amazing.”</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+		
+		<!-- Card 4 -->
+        <div class="testimonial-card text-center">
+          <img src="images/Kishore review.jpg"
+               alt="Kishore"
+               class="profile-pic" />
+          <h5>Kishore</h5>
+          <small>Invisible Grills</small>
+          <p>“Professional and efficient installation. Sleek design—worth every penny!”</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+		<!-- Card 5 -->
+        <div class="testimonial-card text-center">
+          <img src="images/Ramesh review.jpg"
+               alt="Kishore"
+               class="profile-pic" />
+          <h5>Kishore</h5>
+          <small>Mosquito nets</small>
+          <p>“Great solution—safe windows without compromising views.”</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+		
+		<!-- Card 6 -->
+        <div class="testimonial-card text-center">
+          <img src="images/Ramesh review.jpg"
+               alt="Kishore"
+               class="profile-pic" />
+          <h5>Kishore</h5>
+          <small>Invisible Grills</small>
+          <p>“Great solution—safe windows without compromising views.”</p>
+          <div class="star-rating">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+        </div>
+
+        <!-- duplicate cards to loop smoothly -->
+        <div class="testimonial-card text-center p-4">…Guru…</div>
+        <div class="testimonial-card text-center p-4">…Roopa…</div>
+        <div class="testimonial-card text-center p-4">…Kishore…</div>
+		<div class="testimonial-card text-center p-4">…Praveen…</div>
+        <div class="testimonial-card text-center p-4">…Kumar…</div>
+        <div class="testimonial-card text-center p-4">…Rahul…</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FLOATING CONTACTS -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/918985942456" target="_blank" title="Chat on WhatsApp">
+      <img src="images/whatsapp-icon.jpg" alt="WhatsApp Chat">
+    </a>
+  </div>
+  <div class="call-button">
+    <a href="tel:+918985942456" title="Call Now">
+      <img src="images/phone-icon.jpg" alt="Call Now">
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-1">© 2025 Suraksha Safety Nets. All rights reserved.</p>
+      <small>Made with pride in Bengaluru</small>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Suraksha Safety Nets - Child Safety Nets</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #e0ebf5;
+      color: #333;
+    }
+
+    .hero {
+      background: url('images/child-safety-net.jpg') center/cover no-repeat;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    .hero .overlay {
+      background-color: rgba(255,255,255,0.5);
+      backdrop-filter: blur(6px);
+      display: inline-block;
+      padding: 40px 40px;
+      border-radius: 16px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+    }
+    .logo {
+      width: 170px;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #007acc;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      color: #222;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background: linear-gradient(to right, #007acc, #00c6ff);
+      color: #fff;
+      padding: 14px 28px;
+      font-weight: 600;
+      border-radius: 40px;
+      text-decoration: none;
+      display: inline-block;
+      transition: transform 0.3s ease;
+    }
+    .cta-button:hover {
+      transform: scale(1.05);
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 60px 20px;
+    }
+    .feature-card {
+      background: #f2f7ff;
+      border-radius: 16px;
+      padding: 25px;
+      width: 230px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+      opacity: 0;
+    }
+    .feature-card:hover {
+      transform: translateY(-10px);
+    }
+    .feature-card img {
+      width: 160px;
+      margin-bottom: 15px;
+    }
+    .feature-card h3 {
+      font-size: 1.1rem;
+      color: #007acc;
+      margin-bottom: 8px;
+    }
+    .feature-card p {
+      font-size: 1rem;
+      color: #333;
+    }
+
+    .why-choose {
+      background: #ffffff;
+      padding: 60px 20px;
+      margin: 60px auto;
+      max-width: 1000px;
+      border-radius: 16px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+      opacity: 0;
+    }
+    .why-choose h2 {
+      font-size: 2rem;
+      color: #007acc;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .why-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .why-grid ul {
+      list-style: none;
+      flex: 1;
+    }
+    .why-grid li {
+      font-size: 1rem;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+    }
+    .why-grid li::before {
+      content: "✅";
+      margin-right: 14px;
+      font-size: 1rem;
+    }
+
+    footer {
+      background: #f0f0f0;
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      color: #777;
+      opacity: 1;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      animation: pulse 2s infinite;
+    }
+    .whatsapp-float img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+
+    @media(max-width: 768px) {
+      .why-grid { flex-direction: column; }
+      .feature-card { width: 100%; max-width: 300px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="overlay">
+      <img src="images/Suraksha-logo.jpeg" alt="Suraksha Logo" class="logo" />
+      <h1>Child Safety Nets by Suraksha</h1>
+      <p>Secure Balconies & Windows Without Sacrificing Comfort</p>
+      <a href="tel:+918985942456" class="cta-button">📞 +91 89859 42456</a>
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature-card">
+      <img src="images/UV-protecting-image.jpg" alt="UV-Protected Netting">
+      <h3>UV-Protected Netting</h3>
+      <p>Long-lasting protection under harsh sunlight — made for balconies.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/invisible-grill-57.jpg" alt="Clear View">
+      <h3>Unobstructed Views</h3>
+      <p>Protect your little ones while keeping visibility intact.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/child-safety-image-readMore.jpg" alt="Safe Mesh Gaps">
+      <h3>Safe Mesh Spacing</h3>
+      <p>Fine mesh blocks falls without making children feel enclosed.</p>
+    </div>
+    <div class="feature-card">
+      <img src="images/next-day-installation-image.jpg" alt="Fast Installation">
+      <h3>Fast Installation</h3>
+      <p>Fitted in under 24 hours by our friendly field technicians.</p>
+    </div>
+  </section>
+
+  <section class="why-choose">
+    <h2>✨ Why Choose Suraksha Child Safety Nets?</h2>
+    <div class="why-grid">
+      <ul>
+        <li>Discreet & secure protection for balconies and windows</li>
+        <li>Flexible & non-toxic net material ideal for kids and pets</li>
+        <li>Strong anchoring without damaging walls or paint</li>
+      </ul>
+      <ul>
+        <li>Fast response and same-day fitting available</li>
+        <li>Backed by 5-year service support & warranty</li>
+        <li>Trusted by 3,000+ Bengaluru families</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Suraksha Safety Nets. All rights reserved.
+  </footer>
+
+  <a href="https://wa.me/918985942456" class="whatsapp-float" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Chat">
+  </a>
+
+  <!-- GSAP & Scroll Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Animate feature cards on scroll
+  gsap.utils.toArray('.feature-card').forEach((card, i) => {
+    gsap.to(card, {
+      scrollTrigger: {
+        trigger: card,
+        start: 'top 85%',
+      },
+      opacity: 1,
+      y: 0,
+      duration: 0.6,
+      delay: i * 0.1,
+      ease: 'power2.out'
+    });
+  });
+
+  // Animate why-choose section
+  gsap.to('.why-choose', {
+    scrollTrigger: {
+      trigger: '.why-choose',
+      start: 'top 80%',
+    },
+    opacity: 1,
+    y: 0,
+    duration: 0.8,
+    ease: 'power2.out'
+  });
+
+  // Animate footer
+  gsap.to('footer', {
+    scrollTrigger: {
+      trigger: 'footer',
+      start: 'top 90%',
+    },
+    opacity: 1,
+    y: 0,
+    duration: 0.6,
+    ease: 'power2.out'
+  });
+</script>
+</body>
+</html>
